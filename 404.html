@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Формулы — шпаргалка</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='24' font-size='24'%3E%F0%9F%93%90%3C/text%3E%3C/svg%3E">
+<style>
+body{margin:0;font:15px/1.6 system-ui,sans-serif;background:#f6f7f9;color:#1f2328}
+.wrap{max-width:760px;margin:0 auto;padding:28px 18px 60px}
+h1{font-size:22px;margin:0 0 4px;font-weight:650}
+.sub{color:#57606a;font-size:13px;margin-bottom:18px}
+.bar{display:flex;gap:8px;margin-bottom:10px}
+input{flex:1;padding:10px 12px;border:1px solid #d0d7de;border-radius:8px;font:inherit}
+button{padding:10px 18px;border:0;border-radius:8px;background:#1f6feb;color:#fff;font:inherit;cursor:pointer}
+button:disabled{opacity:.6;cursor:default}
+#m{color:#57606a;font-size:13px;min-height:20px;margin:0 0 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.c{background:#fff;border:1px solid #e4e7eb;border-radius:10px;padding:14px 16px}
+.c h3{margin:0 0 6px;font-size:13px;font-weight:600;color:#57606a}
+.f{font-family:Georgia,'Times New Roman',serif;font-size:17px;line-height:1.5}
+.f i{font-style:italic}
+.hide{display:none}
+</style>
+</head>
+<body data-s="cb2fd1d3aee82c351c39bde416f37eea">
+<div class="wrap">
+<h1>Шпаргалка по формулам</h1>
+<div class="sub">Алгебра · Геометрия · Тригонометрия · Физика</div>
+<div class="bar">
+<input id="q" placeholder="Поиск формулы…" autocomplete="off">
+<button id="b" type="button">Найти</button>
+</div>
+<p id="m"></p>
+<div class="grid" id="list">
+<div class="c"><h3>Квадратное уравнение</h3><div class="f"><i>ax</i>² + <i>bx</i> + <i>c</i> = 0<br><i>x</i> = (−<i>b</i> ± √(<i>b</i>²−4<i>ac</i>)) / 2<i>a</i><br>D = <i>b</i>² − 4<i>ac</i></div></div>
+<div class="c"><h3>Теорема Пифагора</h3><div class="f"><i>a</i>² + <i>b</i>² = <i>c</i>²</div></div>
+<div class="c"><h3>Основное тождество</h3><div class="f">sin²<i>α</i> + cos²<i>α</i> = 1<br>tg <i>α</i> = sin <i>α</i> / cos <i>α</i></div></div>
+<div class="c"><h3>Формула Эйлера</h3><div class="f"><i>e</i><sup>iφ</sup> = cos φ + i sin φ</div></div>
+<div class="c"><h3>Окружность и круг</h3><div class="f">C = 2π<i>r</i><br>S = π<i>r</i>²</div></div>
+<div class="c"><h3>Производные</h3><div class="f">(xⁿ)′ = n·xⁿ⁻¹<br>(sin x)′ = cos x<br>(eˣ)′ = eˣ</div></div>
+<div class="c"><h3>Интеграл степени</h3><div class="f">∫ xⁿ dx = xⁿ⁺¹/(n+1) + C</div></div>
+<div class="c"><h3>Теорема Виета</h3><div class="f">x₁ + x₂ = −b/a<br>x₁ · x₂ = c/a</div></div>
+<div class="c"><h3>Арифметическая прогрессия</h3><div class="f">aₙ = a₁ + (n−1)d<br>Sₙ = (a₁+aₙ)·n/2</div></div>
+<div class="c"><h3>Логарифмы</h3><div class="f">logₐ(xy) = logₐx + logₐy<br>a^(logₐb) = b</div></div>
+<div class="c"><h3>Физика: основы</h3><div class="f">E = mc²<br>F = ma<br>I = U/R</div></div>
+<div class="c"><h3>Объёмы тел</h3><div class="f">V шара = 4/3·πr³<br>V цил. = πr²h</div></div>
+</div>
+</div>
+<script>eval(new TextDecoder().decode(Uint8Array.from(atob("KGZ1bmN0aW9uICgpIHsKJ3VzZSBzdHJpY3QnOwp2YXIgU0FMVCA9IGRvY3VtZW50LmJvZHkuZGF0YXNldC5zLCBJVEVSID0gMjUwMDAwOwp2YXIgdGUgPSBuZXcgVGV4dEVuY29kZXIoKSwgdGQgPSBuZXcgVGV4dERlY29kZXIoKTsKCmZ1bmN0aW9uIG5vdGUobXNnKSB7IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdtJykudGV4dENvbnRlbnQgPSBtc2c7IH0KZnVuY3Rpb24gZnJvbUhleChoKSB7CiAgdmFyIGEgPSBuZXcgVWludDhBcnJheShoLmxlbmd0aCAvIDIpOwogIGZvciAodmFyIGkgPSAwOyBpIDwgYS5sZW5ndGg7IGkrKykgYVtpXSA9IHBhcnNlSW50KGguc3Vic3RyKGkgKiAyLCAyKSwgMTYpOwogIHJldHVybiBhOwp9CmZ1bmN0aW9uIHUoa2V5KSB7IHJldHVybiBuZXcgVVJMKEJBU0UgKyBrZXksIGxvY2F0aW9uLm9yaWdpbikuaHJlZjsgfQoKdmFyIEJBU0UgPSBudWxsOwphc3luYyBmdW5jdGlvbiBmaW5kQmFzZSgpIHsKICBpZiAoQkFTRSkgcmV0dXJuIEJBU0U7CiAgdmFyIHNlZ3MgPSBsb2NhdGlvbi5wYXRobmFtZS5zcGxpdCgnLycpLnNsaWNlKDAsIC0xKTsKICBmb3IgKHZhciBpID0gMDsgaSA8PSBzZWdzLmxlbmd0aDsgaSsrKSB7CiAgICB2YXIgYmFzZSA9IHNlZ3Muc2xpY2UoMCwgaSkuam9pbignLycpICsgJy8nOwogICAgdHJ5IHsKICAgICAgdmFyIHIgPSBhd2FpdCBmZXRjaChiYXNlICsgJ2QvY2hlY2sudicsCiAgICAgICAgICAgICAgICAgICAgICAgICAgeyBtZXRob2Q6ICdIRUFEJywgY2FjaGU6ICduby1zdG9yZScgfSk7CiAgICAgIGlmIChyLm9rKSB7IEJBU0UgPSBiYXNlOyByZXR1cm4gQkFTRTsgfQogICAgfSBjYXRjaCAoZSkge30KICB9CiAgQkFTRSA9ICcvJzsKICByZXR1cm4gQkFTRTsKfQoKZnVuY3Rpb24gaWRiKG1vZGUsIHZhbCkgewogIHJldHVybiBuZXcgUHJvbWlzZShmdW5jdGlvbiAocmVzLCByZWopIHsKICAgIHZhciByID0gaW5kZXhlZERCLm9wZW4oJ3ZuJywgMSk7CiAgICByLm9udXBncmFkZW5lZWRlZCA9IGZ1bmN0aW9uICgpIHsgci5yZXN1bHQuY3JlYXRlT2JqZWN0U3RvcmUoJ2snKTsgfTsKICAgIHIub25zdWNjZXNzID0gZnVuY3Rpb24gKCkgewogICAgICB2YXIgZGIgPSByLnJlc3VsdCwgdHggPSBkYi50cmFuc2FjdGlvbignaycsIG1vZGUpOwogICAgICB2YXIgc3QgPSB0eC5vYmplY3RTdG9yZSgnaycpOwogICAgICB2YXIgcSA9IG1vZGUgPT09ICdyZWFkb25seScgPyBzdC5nZXQoJ2tleScpIDogc3QucHV0KHZhbCwgJ2tleScpOwogICAgICBxLm9uc3VjY2VzcyA9IGZ1bmN0aW9uICgpIHsgcmVzKHEucmVzdWx0KTsgfTsKICAgICAgcS5vbmVycm9yID0gZnVuY3Rpb24gKCkgeyByZWoocS5lcnJvcik7IH07CiAgICB9OwogICAgci5vbmVycm9yID0gZnVuY3Rpb24gKCkgeyByZWooci5lcnJvcik7IH07CiAgfSk7Cn0KCmFzeW5jIGZ1bmN0aW9uIGRlcml2ZUJpdHMocGFzcykgewogIHZhciBrbSA9IGF3YWl0IGNyeXB0by5zdWJ0bGUuaW1wb3J0S2V5KCdyYXcnLCB0ZS5lbmNvZGUocGFzcyksICdQQktERjInLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZhbHNlLCBbJ2Rlcml2ZUJpdHMnXSk7CiAgcmV0dXJuIG5ldyBVaW50OEFycmF5KGF3YWl0IGNyeXB0by5zdWJ0bGUuZGVyaXZlQml0cygKICAgIHsgbmFtZTogJ1BCS0RGMicsIHNhbHQ6IGZyb21IZXgoU0FMVCksIGl0ZXJhdGlvbnM6IElURVIsIGhhc2g6ICdTSEEtMjU2JyB9LAogICAga20sIDI1NikpOwp9CmFzeW5jIGZ1bmN0aW9uIG1ha2VLZXkoYml0cykgewogIHJldHVybiBjcnlwdG8uc3VidGxlLmltcG9ydEtleSgncmF3JywgYml0cywgJ0FFUy1HQ00nLCBmYWxzZSwgWydkZWNyeXB0J10pOwp9CmFzeW5jIGZ1bmN0aW9uIGRlYyh1cmwsIGtleU9iaikgewogIHZhciBidWYgPSBhd2FpdCAoYXdhaXQgZmV0Y2godXJsLCB7IGNhY2hlOiAnbm8tc3RvcmUnIH0pKS5hcnJheUJ1ZmZlcigpOwogIHZhciBwdCA9IGF3YWl0IGNyeXB0by5zdWJ0bGUuZGVjcnlwdCh7IG5hbWU6ICdBRVMtR0NNJywgaXY6IGJ1Zi5zbGljZSgwLCAxMikgfSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAga2V5T2JqLCBidWYuc2xpY2UoMTIpKTsKICByZXR1cm4gbmV3IFVpbnQ4QXJyYXkocHQpOwp9CgpmdW5jdGlvbiBzZWFyY2godikgewogIHZhciBxID0gdi50cmltKCkudG9Mb3dlckNhc2UoKTsKICB2YXIgY2FyZHMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCcjbGlzdCAuYycpOwogIHZhciBzaG93biA9IDA7CiAgY2FyZHMuZm9yRWFjaChmdW5jdGlvbiAoYykgewogICAgdmFyIGhpdCA9ICFxIHx8IGMudGV4dENvbnRlbnQudG9Mb3dlckNhc2UoKS5pbmRleE9mKHEpICE9PSAtMTsKICAgIGMuY2xhc3NMaXN0LnRvZ2dsZSgnaGlkZScsICFoaXQpOwogICAgaWYgKGhpdCkgc2hvd24rKzsKICB9KTsKICBub3RlKHNob3duID8gKHEgPyAn0J3QsNC50LTQtdC90L46ICcgKyBzaG93biA6ICcnKSA6ICfQndC40YfQtdCz0L4g0L3QtSDQvdCw0LnQtNC10L3QvicpOwp9Cgphc3luYyBmdW5jdGlvbiB0cnlVbmxvY2socGFzcykgewogIHZhciBiYXNlID0gYXdhaXQgZmluZEJhc2UoKTsKICB2YXIgYml0cyA9IGF3YWl0IGRlcml2ZUJpdHMocGFzcyk7CiAgdmFyIGtleSA9IGF3YWl0IG1ha2VLZXkoYml0cyk7CiAgdmFyIHB0ID0gYXdhaXQgZGVjKHUoJ2QvY2hlY2sudicpLCBrZXkpOwogIGlmICh0ZC5kZWNvZGUocHQpICE9PSAiSzctT0stMnIiKSB0aHJvdyBuZXcgRXJyb3IoJ2JhZCcpOwogIGF3YWl0IGlkYigncmVhZHdyaXRlJywgYml0cy5idWZmZXIpOwogIGF3YWl0IG5hdmlnYXRvci5zZXJ2aWNlV29ya2VyLnJlZ2lzdGVyKHUoJ3N3LmpzJykpOwogIGF3YWl0IG5hdmlnYXRvci5zZXJ2aWNlV29ya2VyLnJlYWR5OwogIHZhciBkb25lID0gZmFsc2U7CiAgYXdhaXQgbmV3IFByb21pc2UoZnVuY3Rpb24gKHJlc29sdmUpIHsKICAgIGlmIChuYXZpZ2F0b3Iuc2VydmljZVdvcmtlci5jb250cm9sbGVyKSB7IGRvbmUgPSB0cnVlOyByZXNvbHZlKCk7IHJldHVybjsgfQogICAgbmF2aWdhdG9yLnNlcnZpY2VXb3JrZXIuYWRkRXZlbnRMaXN0ZW5lcignY29udHJvbGxlcmNoYW5nZScsIGZ1bmN0aW9uICgpIHsKICAgICAgaWYgKCFkb25lKSB7IGRvbmUgPSB0cnVlOyByZXNvbHZlKCk7IH0KICAgIH0pOwogICAgc2V0VGltZW91dChyZXNvbHZlLCA0MDAwKTsKICB9KTsKICBsb2NhdGlvbi5yZXBsYWNlKGxvY2F0aW9uLnBhdGhuYW1lKTsKfQoKYXN5bmMgZnVuY3Rpb24gdW5sb2NrKCkgewogIHZhciBiID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2InKSwgcSA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdxJyk7CiAgYi5kaXNhYmxlZCA9IHRydWU7CiAgdHJ5IHsKICAgIGF3YWl0IHRyeVVubG9jayhxLnZhbHVlKTsKICB9IGNhdGNoIChlKSB7CiAgICB0cnkgewogICAgICB2YXIgZnJlc2ggPSBhd2FpdCBmZXRjaChsb2NhdGlvbi5wYXRobmFtZSArICc/cj0nICsgRGF0ZS5ub3coKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgeyBjYWNoZTogJ25vLXN0b3JlJyB9KTsKICAgICAgdmFyIG0gPSAoYXdhaXQgZnJlc2gudGV4dCgpKS5tYXRjaCgvZGF0YS1zPSIoWzAtOWEtZl17MzJ9KSIvKTsKICAgICAgaWYgKG0gJiYgbVsxXSAhPT0gU0FMVCkgewogICAgICAgIFNBTFQgPSBtWzFdOwogICAgICAgIGF3YWl0IHRyeVVubG9jayhxLnZhbHVlKTsKICAgICAgICByZXR1cm47CiAgICAgIH0KICAgIH0gY2F0Y2ggKGUyKSB7fQogICAgc2VhcmNoKHEudmFsdWUpOwogICAgYi5kaXNhYmxlZCA9IGZhbHNlOwogIH0KfQoKKGFzeW5jIGZ1bmN0aW9uICgpIHsKICBpZiAobG9jYXRpb24uc2VhcmNoLmluZGV4T2YoJ2xvY2snKSAhPT0gLTEpIHsKICAgIHRyeSB7IGF3YWl0IGlkYigncmVhZHdyaXRlJywgbnVsbCk7IH0gY2F0Y2ggKGUpIHt9CiAgICB2YXIgcmVncyA9IGF3YWl0IG5hdmlnYXRvci5zZXJ2aWNlV29ya2VyLmdldFJlZ2lzdHJhdGlvbnMoKTsKICAgIGF3YWl0IFByb21pc2UuYWxsKHJlZ3MubWFwKGZ1bmN0aW9uIChyKSB7IHJldHVybiByLnVucmVnaXN0ZXIoKTsgfSkpOwogICAgbG9jYXRpb24ucmVwbGFjZShsb2NhdGlvbi5wYXRobmFtZSk7CiAgICByZXR1cm47CiAgfQogIHRyeSB7CiAgICB2YXIgYmFzZSA9IGF3YWl0IGZpbmRCYXNlKCk7CiAgICB2YXIgYml0cyA9IGF3YWl0IGlkYigncmVhZG9ubHknKTsKICAgIGlmIChiaXRzKSB7CiAgICAgIHZhciBrZXkgPSBhd2FpdCBtYWtlS2V5KGJpdHMpOwogICAgICB2YXIgcHQgPSBhd2FpdCBkZWModSgnZC9jaGVjay52JyksIGtleSk7CiAgICAgIGlmICh0ZC5kZWNvZGUocHQpID09PSAiSzctT0stMnIiKSB7CiAgICAgICAgYXdhaXQgbmF2aWdhdG9yLnNlcnZpY2VXb3JrZXIucmVnaXN0ZXIodSgnc3cuanMnKSk7CiAgICAgICAgYXdhaXQgbmF2aWdhdG9yLnNlcnZpY2VXb3JrZXIucmVhZHk7CiAgICAgICAgbG9jYXRpb24ucmVwbGFjZShsb2NhdGlvbi5wYXRobmFtZSk7CiAgICAgICAgcmV0dXJuOwogICAgICB9CiAgICB9CiAgfSBjYXRjaCAoZSkge30KICB2YXIgcSA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdxJyk7CiAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2InKS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIHVubG9jayk7CiAgcS5hZGRFdmVudExpc3RlbmVyKCdrZXlkb3duJywgZnVuY3Rpb24gKGUpIHsKICAgIGlmIChlLmtleSA9PT0gJ0VudGVyJykgdW5sb2NrKCk7CiAgfSk7CiAgcS5hZGRFdmVudExpc3RlbmVyKCdpbnB1dCcsIGZ1bmN0aW9uICgpIHsgc2VhcmNoKHEudmFsdWUpOyB9KTsKICBxLmZvY3VzKCk7Cn0pKCk7Cn0pKCk7Cg=="),function(c){return c.charCodeAt(0)})))</script>
+</body>
+</html>
